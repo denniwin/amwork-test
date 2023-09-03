@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="todos">
         <TodoHeader/>
-        <TodoItem/>
+        {todos && todos.map(todo => <TodoItem todo={todo} key={todo.id} />)}
   </div>
 
     </>

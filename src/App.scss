@@ -18,6 +18,10 @@
     gap: 5px;
 
     &-title {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
       pointer-events: none;
       color: #50B810;
       font-size: 14px;
@@ -50,7 +54,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 5px;
-    margin: 0 auto;
+    margin: 8 px auto;
     height: 158px;
     border-radius: 7px;
     box-shadow: 0 0 4px 4px #F4F8FF;
@@ -84,6 +88,10 @@
   }
 
   &__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     text-align: left;
     color: #555;
     text-overflow: ellipsis;
@@ -95,6 +103,7 @@
 
   &__tags {
     display: flex;
+    gap: 5px;
   }
 
   &__tag:first-child {
