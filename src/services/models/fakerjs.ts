@@ -1,5 +1,5 @@
 export interface FakerJs {
-    descr: string
+    description: string
     startDate: Date
     endDate: Date
     tags: string[]

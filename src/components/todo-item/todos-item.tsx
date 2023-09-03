@@ -28,7 +28,7 @@ const TodoItem = ({ todo }: {todo: Todos}) => {
               {formatDate(fakeData.endDate)}
             </div>
           </div>
-          <div className="todos__description">{fakeData.descr}</div>
+          <div className="todos__description">{fakeData.description}</div>
           <div className="todos__tags">
             <div className="todos__tag">{fakeData.tags[0]}</div>
             <div className="todos__tag">{fakeData.tags[1]}</div>
