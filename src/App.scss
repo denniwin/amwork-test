@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -9,9 +9,16 @@
   font-family: 'Segoe UI', 'Arial', 'Helvetica', sans-serif;
   margin: 0 auto;
   width: 255px;
+  max-height: 95vh;
+  overflow-y: auto;
+  
 
   &__header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
     padding: 5px 0;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -33,9 +40,9 @@
 
   &__actions {
     display: flex;
-    gap: 5px;
 
-    &-img {
+    &-add {
+    margin-right: 5px;
       border-radius: 5px;
       cursor: pointer;
       transition: .4s;
@@ -46,6 +53,23 @@
         transition: .4s;
       }
     }
+
+    &-count {
+      cursor: default;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 20px;
+      height: 20px;
+      border: 1px solid #7B8AAB;;
+      border-radius: 4px;
+      margin-right: 5px;
+
+      & span {
+        color: #7B8AAB;
+        font-size: 12px;
+      }
+    }
   }
 
   &__item {
@@ -54,7 +78,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 5px;
-    margin: 8 px auto;
+    margin: 8px auto;
     height: 158px;
     border-radius: 7px;
     box-shadow: 0 0 4px 4px #F4F8FF;
@@ -125,7 +149,7 @@
     font-size: 12px;
     color: #616C82;
     padding: 1px;
-    min-width: 72px;
+    width: 72px;
     height: 20px;
     border-radius: 4px;
   }
